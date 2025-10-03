@@ -272,6 +272,23 @@
         </div>
 
     </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = menuBtn.querySelector("img");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right === "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "Barber_img/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menuImg.src = "Barber_img/menu.png";
+            }
+        };
+    </script>
     
 </body>
 </html>
